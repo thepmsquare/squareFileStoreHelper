@@ -1,0 +1,27 @@
+{
+  "name": "squarefilestorehelper",
+  "version": "1.0.0",
+  "description": "helper for file store layer of my personal server.",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "",
+    "dev": "tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thepmsquare/squareFileStoreHelper"
+  },
+  "author": "thePmSquare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thepmsquare/squareFileStoreHelper/issues"
+  },
+  "homepage": "https://github.com/thepmsquare/squareFileStoreHelper#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
