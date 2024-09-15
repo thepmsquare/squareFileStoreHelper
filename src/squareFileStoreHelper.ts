@@ -14,21 +14,21 @@ class SquareFileStoreHelper {
   /**
    * Upload a file to the server.
    * @param file - The file to be uploaded.
-   * @param filePurpose - Optional purpose of the file.
+   * @param appId - Optional app id.
    * @param systemRelativePath - Optional system path where the file should be stored.
    * @returns The server response, including a FileStorageToken.
    */
   public async uploadFile(
     file: File | Blob,
-    filePurpose?: string,
+    appId?: number,
     systemRelativePath?: string
   ): Promise<UploadResponse | null> {
     try {
       const formData = new FormData();
       formData.append("file", file);
 
-      if (filePurpose) {
-        formData.append("file_purpose", filePurpose);
+      if (appId) {
+        formData.append("app_id", appId.toString());
       }
 
       if (systemRelativePath) {
