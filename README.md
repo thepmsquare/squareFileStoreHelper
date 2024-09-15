@@ -15,6 +15,10 @@ file store helper for personal server.
 
 ## changelog
 
+### v1.0.1
+
+- replace filePurpose with appId.
+
 ### v1.0.0
 
 - initial implementation.
